@@ -1,0 +1,19 @@
+{
+    "name": "torqit/pimcore-object-layout-grid-bundle",
+    "type": "pimcore-bundle",
+    "require": {
+        "pimcore/pimcore": "^11.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "TorqIT\\ObjectLayoutGridBundle\\": "src"
+        }
+    },
+    "extra": {
+        "pimcore": {
+            "bundles": [
+                "TorqIT\\ObjectLayoutGridBundle\\ObjectLayoutGridBundle"
+            ]
+        }
+    }
+}
