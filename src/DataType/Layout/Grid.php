@@ -8,6 +8,9 @@ use Pimcore\Model\DataObject\Concrete;
 
 class Grid extends Layout implements LayoutDefinitionEnrichmentInterface
 {
+    public const GRID_DATA_TYPE_API = "API";
+    public const GRID_DATA_TYPE_CUSTOM_REPORT = "Custom Report";
+
     public string $fieldtype = 'grid';
 
     public string $gridDataType;
