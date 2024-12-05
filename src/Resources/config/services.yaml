@@ -10,6 +10,6 @@ services:
         public: false
 
     TorqIT\ObjectLayoutGridBundle\Controller\:
-        resource: "../src/Controller"
+        resource: "../../Controller"
         public: true
         tags: ["controller.service_arguments"]
