@@ -26,7 +26,7 @@ pimcore.object.layout.grid = Class.create(pimcore.object.abstract, {
         if(gridDataType === ObjectLayoutGrid.gridTypeCustomReport){
             dataStoreUrl = Routing.generate("pimcore_bundle_objectlayoutgrid_customreport_getdata");
         }else if(gridDataType === ObjectLayoutGrid.gridTypeAPI){
-            dataStoreUrl = this.config?.dataUrl;
+            dataStoreUrl = this.config?.apiDataUrl;
         }
 
         const dataStore = Ext.create('Ext.data.Store', {
