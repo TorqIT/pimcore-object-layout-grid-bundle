@@ -206,6 +206,15 @@ pimcore.object.classes.layout.grid = Class.create(pimcore.object.classes.layout.
             {text: "Position", width: 65, sortable: true, dataIndex: 'position', editor: new Ext.form.NumberField({})},
             {text: "Data Index", flex: 40, sortable: true, dataIndex: 'dataIndex', editor: new Ext.form.TextField({})},
             {text: "Label", flex: 40, sortable: true, dataIndex: 'label', editor: new Ext.form.TextField({})},
+            {text: "Sort Direction", flex: 40, sortable: true, dataIndex: 'sortDirection', editor: new Ext.form.ComboBox(
+                {
+                    store: [
+                        ['ASC', 'Ascending'],
+                        ['DESC', 'Descending'],
+                        ['', 'Unsorted']
+                    ]
+                }
+            )},
             {text: "Open Object", flex: 40, dataIndex: 'openObject', editor: new Ext.form.Checkbox({})}
         ];
 

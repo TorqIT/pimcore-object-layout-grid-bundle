@@ -29,6 +29,16 @@ pimcore.object.layout.grid = Class.create(pimcore.object.abstract, {
             dataStoreUrl = this.config?.apiDataUrl;
         }
 
+        let gridDataStoreSorters = [];
+        this.config.columns.forEach(function(field) {
+            if (field.sortDirection) {
+                gridDataStoreSorters.push({
+                    property: field.dataIndex,
+                    direction: field.sortDirection
+                });
+            }
+        });
+
         const dataStore = Ext.create('Ext.data.Store', {
             proxy: {
                 type: 'ajax',
@@ -43,9 +53,9 @@ pimcore.object.layout.grid = Class.create(pimcore.object.abstract, {
                 }
             },
             pageSize: 0, // Prevents paging query params from being added (expected to be loading all data)
-            autoLoad: true
+            autoLoad: true,
+            sorters: gridDataStoreSorters
         });
-        
 
         const orderedFields = this.config.columns.sort((a, b) => a.position - b.position);
         if(orderedFields?.length > 0) {
@@ -54,9 +64,13 @@ pimcore.object.layout.grid = Class.create(pimcore.object.abstract, {
                     xtype: 'gridpanel',
                     store: dataStore,
                     columns: orderedFields.map(field => {
+                        const defaultColumnData = {
+                            text: field.label
+                        };
+
                         if(field.openObject){
                             return {
-                                text: field.label,
+                                ...defaultColumnData,
                                 xtype: 'actioncolumn',
                                 width: 100,
                                 items: [
@@ -76,7 +90,7 @@ pimcore.object.layout.grid = Class.create(pimcore.object.abstract, {
                         }
 
                         return {
-                            text: field.label,
+                            ...defaultColumnData,
                             dataIndex: field.dataIndex,
                             flex: 1
                         };
