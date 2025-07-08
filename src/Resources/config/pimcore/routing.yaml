@@ -1,6 +1,6 @@
 app:
-    resource: "@ObjectLayoutGridBundle/Controller/"
-    type: annotation
+    resource: "../../../Controller/"
+    type: attribute
     prefix: /admin/bundle/objectlayoutgrid
     options:
         expose: true
