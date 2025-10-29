@@ -1,5 +1,5 @@
 app:
-    resource: "../../../Controller/"
+    resource: '@ObjectLayoutGridBundle/Controller/'
     type: attribute
     prefix: /admin/bundle/objectlayoutgrid
     options:
