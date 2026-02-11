@@ -1,5 +1,5 @@
 {
-    "license": "POCL",
+    "license": "proprietary",
     "name": "torqit/pimcore-object-layout-grid-bundle",
     "type": "pimcore-bundle",
     "require": {
