@@ -1,0 +1,38 @@
+{
+  "allFiles": [
+    "/bundles/objectlayoutgrid/studio/build/8bf7ae27-5a81-43e1-87e5-4d8bfef86c0a/static/js/main.2f21df9e.js",
+    "/bundles/objectlayoutgrid/studio/build/8bf7ae27-5a81-43e1-87e5-4d8bfef86c0a/static/js/remoteEntry.js",
+    "/bundles/objectlayoutgrid/studio/build/8bf7ae27-5a81-43e1-87e5-4d8bfef86c0a/static/js/async/__federation_expose_default_export.c5adad30.js",
+    "/bundles/objectlayoutgrid/studio/build/8bf7ae27-5a81-43e1-87e5-4d8bfef86c0a/static/js/async/481.d7d3f983.js",
+    "/bundles/objectlayoutgrid/studio/build/8bf7ae27-5a81-43e1-87e5-4d8bfef86c0a/static/js/814.6bd3b4b1.js",
+    "/bundles/objectlayoutgrid/studio/build/8bf7ae27-5a81-43e1-87e5-4d8bfef86c0a/mf-stats.json",
+    "/bundles/objectlayoutgrid/studio/build/8bf7ae27-5a81-43e1-87e5-4d8bfef86c0a/mf-manifest.json",
+    "/bundles/objectlayoutgrid/studio/build/8bf7ae27-5a81-43e1-87e5-4d8bfef86c0a/main.html"
+  ],
+  "entries": {
+    "main": {
+      "html": [
+        "/bundles/objectlayoutgrid/studio/build/8bf7ae27-5a81-43e1-87e5-4d8bfef86c0a/main.html"
+      ],
+      "initial": {
+        "js": [
+          "/bundles/objectlayoutgrid/studio/build/8bf7ae27-5a81-43e1-87e5-4d8bfef86c0a/static/js/814.6bd3b4b1.js",
+          "/bundles/objectlayoutgrid/studio/build/8bf7ae27-5a81-43e1-87e5-4d8bfef86c0a/static/js/main.2f21df9e.js"
+        ]
+      }
+    },
+    "torq_object_layout_grid_bundle": {
+      "initial": {
+        "js": [
+          "/bundles/objectlayoutgrid/studio/build/8bf7ae27-5a81-43e1-87e5-4d8bfef86c0a/static/js/remoteEntry.js"
+        ]
+      },
+      "async": {
+        "js": [
+          "/bundles/objectlayoutgrid/studio/build/8bf7ae27-5a81-43e1-87e5-4d8bfef86c0a/static/js/async/481.d7d3f983.js",
+          "/bundles/objectlayoutgrid/studio/build/8bf7ae27-5a81-43e1-87e5-4d8bfef86c0a/static/js/async/__federation_expose_default_export.c5adad30.js"
+        ]
+      }
+    }
+  }
+}

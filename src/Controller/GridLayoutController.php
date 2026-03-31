@@ -36,7 +36,7 @@ class GridLayoutController extends AdminAbstractController
                         if (
                             $gridLayoutFieldDefinition->customReportFilterByObjectId
                         ) {
-                            $drilldownFilters[$gridLayoutFieldDefinition->customReportFilterIndexName] = $object->getId();
+                            $drilldownFilters[$gridLayoutFieldDefinition->customReportFilterIndexName] = (string)$object->getId();
                         }
 
                         $data = $adapter->getData(null, null, null, null, null, null, $drilldownFilters)['data'];
